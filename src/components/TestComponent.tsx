@@ -6,7 +6,7 @@ type Props = {
 };
 
 const TestComponent: React.FC<Props> = ({ message }) => {
-  return <div>{message}</div>;
+  return <div> {message} </div>
 };
 
 export default TestComponent;

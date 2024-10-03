@@ -1,4 +1,4 @@
-import Title from './Titles'
+import Title from './Titles.tsx'
 
 const Services = () => {
   return (
