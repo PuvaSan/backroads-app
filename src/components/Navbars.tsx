@@ -1,7 +1,18 @@
+import React from 'react'
 import { pageLinks, navIcons } from '../data'
 import logo from '../images/logo.svg'
 
-const Navbar = () => {
+type PageLinkTypes = {
+  href: string,
+  text: string
+}
+
+type NavIconTypes = {
+  href: string,
+  className: string
+}
+
+const Navbar: React.FC = () => {
   return (
     <>
       <nav className="navbar">
@@ -14,10 +25,11 @@ const Navbar = () => {
           </div>
         {/* <!-- left this comment on purpose --> */}
           <ul className="nav-links" id="nav-links">
-            {pageLinks.map( (link) => {
+            {pageLinks.map( (link: PageLinkTypes) => {
+              const {href, text} = link
               return (
                 <li>
-                  <a href={link.href} className="nav-link">{link.text}</a>
+                  <a href={href} className="nav-link">{text}</a>
                 </li>
               );
             })}
@@ -25,10 +37,11 @@ const Navbar = () => {
 
           <ul className="nav-icons">
             {
-              navIcons.map( (link) => {
+              navIcons.map( (link: NavIconTypes) => {
+                const {href, className} = link
                 return (
                   <li>
-                    <a href={link.href} rel="noreferrer" target="_blank" className="nav-icon"><i className={link.className}></i></a>
+                    <a href={href} rel="noreferrer" target="_blank" className="nav-icon"><i className={className}></i></a>
                   </li>
                 );
               })
