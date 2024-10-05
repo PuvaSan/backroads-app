@@ -1,7 +1,19 @@
 import Title from './Titles.tsx'
+import React from 'react'
 import { toursData } from '../data.js'
 
-const Tours = () => {
+type TourTypes = {
+  id: number,
+  name: string,
+  date: string,
+  location: string,
+  days: number,
+  price: number,
+  image: string,
+  description: string
+}
+
+const Tours: React.FC = () => {
   return (
     <>
       <section className="section" id="tours">
@@ -9,13 +21,13 @@ const Tours = () => {
 
         <div className="section-center featured-center">
 
-        {toursData.map ( (tour) => {
-          const {name, date, location, days, price, image, description} = tour;
+        {toursData.map ( (tour: TourTypes) => {
+          const {id, name, date, location, days, price, image, description} = tour;
           return (
             <>
-              <article className="tour-card">
+              <article className="tour-card" key={id.toString()}>
                 <div className="tour-img-container">
-                  <img src={image} className="tour-img" alt="" />
+                  <img src={image.toString()} className="tour-img" alt="" />
                   <p className="tour-date">{date}</p>
                 </div>
                 <div className="tour-info">
@@ -27,8 +39,8 @@ const Tours = () => {
                     <p>
                       <span><i className="fas fa-map"></i></span>{location}
                     </p>
-                    <p>{days}</p>
-                    <p>{price}</p>
+                    <p>{days.toString()}</p>
+                    <p>{price.toString()}</p>
                   </div>
                 </div>
               </article>
