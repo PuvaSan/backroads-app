@@ -342,8 +342,8 @@ Featured Tours
 .tour-date {
   position: absolute;
   right: 0;
-  bottom: 0;
-  background: var(--clr-primary-8);
+  bottom: 8px;
+  background: hsl(184deg 80% 74% / 81%);
   color: var(--clr-primary-1);
   text-transform: capitalize;
   padding: 0.25rem 0.5rem;

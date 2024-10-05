@@ -39,8 +39,8 @@ const Tours: React.FC = () => {
                     <p>
                       <span><i className="fas fa-map"></i></span>{location}
                     </p>
-                    <p>{days.toString()}</p>
-                    <p>{price.toString()}</p>
+                    <p>{days.toString()} days</p>
+                    <p>$ {price.toString()}</p>
                   </div>
                 </div>
               </article>

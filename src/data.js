@@ -55,7 +55,7 @@ export const toursData = [
   {
     id: 1,
     name: 'Tibet Adventure',
-    date: 'august 26th, 2020',
+    date: 'august 26th, 2024',
     location: 'china',
     days: 6,
     price: 2100,
@@ -65,7 +65,7 @@ export const toursData = [
   {
     id: 2,
     name: 'best of java',
-    date: 'october 1th, 2020',
+    date: 'october 1th, 2024',
     location: 'indonesia',
     days: 11,
     price: 1400,
@@ -75,7 +75,7 @@ export const toursData = [
   {
     id: 3,
     name: 'Tibet Adventure',
-    date: 'september 15th, 2020',
+    date: 'september 15th, 2024',
     location: 'china',
     days: 6,
     price: 2100,
@@ -85,7 +85,7 @@ export const toursData = [
   {
     id: 4,
     name: 'Africa Safari',
-    date: 'september 15th, 2020',
+    date: 'september 15th, 2024',
     location: 'Africa',
     days: 6,
     price: 2100,
@@ -95,7 +95,7 @@ export const toursData = [
   {
     id: 5,
     name: 'Africa Safari',
-    date: 'september 15th, 2020',
+    date: 'september 15th, 2024',
     location: 'Africa',
     days: 6,
     price: 2100,
@@ -105,7 +105,7 @@ export const toursData = [
   {
     id: 5,
     name: 'Taj Mahal',
-    date: 'september 15th, 2020',
+    date: 'september 15th, 2024',
     location: 'Africa',
     days: 6,
     price: 2100,
