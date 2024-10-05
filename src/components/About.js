@@ -1,5 +1,6 @@
 import aboutImg from '../images/about.jpeg'
 import Title from './Titles.tsx';
+
 const About = () => {
   return (
     <>
