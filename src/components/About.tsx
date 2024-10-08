@@ -1,8 +1,9 @@
 import aboutImg from '../images/about.jpeg'
 import Title from './Titles.tsx';
 import React from 'react'
+import Paragraph from './Paragraphs.tsx'
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <>
       <section className="section" id="about">
@@ -18,16 +19,8 @@ const About = () => {
           </div>
           <article className="about-info">
             <h3>explore the difference</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-              quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-              unde dolor?
-            </p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-              quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-              unde dolor?
-            </p>
+            <Paragraph text="Lorem ipsum dolor sit lorem ipsum dip sum ipsum lorem dolor sit lorem ipsum dim sum"/>
+
             <a href="#" className="btn">read more</a>
           </article>
         </div>

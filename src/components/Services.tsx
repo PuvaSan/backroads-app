@@ -1,12 +1,13 @@
 import Title from './Titles.tsx'
 import React from 'react'
+import Paragraph from './Paragraphs.tsx'
 import { servicesData } from '../data.js'
 
 type ServicesTypes = {
-  id: Number,
-  title: String,
-  icon: String,
-  text: String
+  id: number,
+  title: string,
+  icon: string,
+  text: string
 }
 
 const Services: React.FC = () => {
@@ -23,7 +24,7 @@ const Services: React.FC = () => {
                   <span className="service-icon"><i className={icon.toString()}></i></span>
                   <div className="service-info">
                     <h4 className="service-title">{title}</h4>
-                    <p className="service-text">{text}</p>
+                    <Paragraph text={text} className="service-text"/>
                   </div>
                 </article>
               </>
