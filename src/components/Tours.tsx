@@ -1,5 +1,6 @@
 import Title from './Titles.tsx'
 import React from 'react'
+import Paragraph from './Paragraphs.tsx'
 import { toursData } from '../data.js'
 
 type TourTypes = {
@@ -34,7 +35,7 @@ const Tours: React.FC = () => {
                   <div className="tour-title">
                     <h4>{name}</h4>
                   </div>
-                  <p>{description}</p>
+                  <Paragraph text={description}/>
                   <div className="tour-footer">
                     <p>
                       <span><i className="fas fa-map"></i></span>{location}
