@@ -11,7 +11,7 @@ Variables
   --clr-primary-3: hsl(185, 81%, 29%);
   --clr-primary-4: hsl(184, 77%, 34%);
   /* primary/main color */
-  --clr-primary-5: hsl(185, 62%, 45%);
+  --clr-primary-5: #e3170a;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
@@ -206,8 +206,8 @@ Hero
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url('./images/main.jpeg') center/cover no-repeat;
+    background: linear-gradient(hsl(185, 57%, 50%) 5%, rgba(0, 0, 0, 0.08) 60%),
+      url('./images/main.gif') center/cover no-repeat;
   }
   .hero-banner {
     padding: 0;
@@ -273,7 +273,7 @@ Services
 }
 .service-icon {
   background: var(--clr-primary-5);
-  color: var(--clr-primary-1);
+  color: var(--clr-primary-10);
   padding: 0.5rem;
   display: inline-block;
   font-size: 2rem;
@@ -343,8 +343,8 @@ Featured Tours
   position: absolute;
   right: 0;
   bottom: 8px;
-  background: hsl(184deg 80% 74% / 81%);
-  color: var(--clr-primary-1);
+  background: #f7b32b;
+  color: #fff;
   text-transform: capitalize;
   padding: 0.25rem 0.5rem;
   margin-bottom: 0;
@@ -404,7 +404,7 @@ Footer
 ===============
 */
 .footer {
-  background: var(--clr-grey-1);
+  background: var(--clr-primary-6);
   text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
