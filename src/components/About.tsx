@@ -21,7 +21,7 @@ const About: React.FC = () => {
             <h3>explore the difference</h3>
             <Paragraph text="Lorem ipsum dolor sit lorem ipsum dip sum ipsum lorem dolor sit lorem ipsum dim sum"/>
 
-            <a href="#" className="btn">read more</a>
+            <a href="#about" className="btn">read more</a>
           </article>
         </div>
       </section>
